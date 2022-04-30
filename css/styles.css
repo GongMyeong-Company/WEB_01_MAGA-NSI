@@ -1,3 +1,12 @@
+/* Safari 9.0+ */
+
+_::-webkit-:not(:root:root), .safari_only {
+
+  color:#0000FF; 
+  background-color:#CCCCCC; 
+
+}
+
 @font-face {
   font-family: "p-b";
   src: url(/fonts/Pretendard-Bold.otf);
