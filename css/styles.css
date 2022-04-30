@@ -54,6 +54,9 @@ html {
   text-align: right;
   margin-top: 10px;
 }
+.sns-list:hover {
+  transform: scale(1.1);
+}
 .sns-list img {
   width: 50%;
 }
@@ -114,6 +117,13 @@ html {
   font-size: 1.2rem;
   padding-top: 5px;
 }
+.input-div:hover {
+  border: 2px solid #17386B;
+}
+.input-div:focus {
+  border: 2px solid #17386B;
+  transform: scale(1.1);
+}
 .btn-outline-primary {
   border: 1px solid #17386B;
   color: #17386B;
@@ -149,6 +159,13 @@ html {
   border: 1px solid lightgray;
   border-radius: 10px;
 }
+.input-btn:hover {
+  border: 2px solid #17386B;
+}
+.input-btn:focus {
+  border: 2px solid #17386B;
+  transform: scale(1.1);
+}
 .input-btn img {
   width: 85%;
 }
@@ -177,6 +194,9 @@ html {
   font-size: 2rem;
   font-family: "p-b";
 }
+.go-button:hover {
+  transform: scale(1.1);
+}
 /* --------------------제휴보험사-------------------- */
 /* --------------------컨텐츠영역-------------------- */
 /* --------------------하단고정바-------------------- */
@@ -200,6 +220,7 @@ html {
   }
   .input-first {
     width: 100%;
+    border: 0;
   }
   .input-second {
     width: 100%;
@@ -271,6 +292,7 @@ html {
   }
   .input-first {
     padding: 10px;
+    border: 0;
   }
   .input-second {
     padding: 10px;
