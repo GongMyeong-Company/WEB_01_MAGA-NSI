@@ -131,13 +131,23 @@ html {
   border-radius: 10px;
   background-color: white;
   font-size: 1.2rem;
-  padding-top: 3px;
+  padding-top: 8px;
   margin-top: 20px;
 }
 .input-div:hover {
   border: 2px solid #17386B;
 }
-.input-div:focus {
+.btn-check:checked+.input-div:focus {
+  box-shadow: none;
+}
+.btn-check:focus+.btn:focus {
+  box-shadow: none;
+}
+.btn-check:checked+.btn:focus {
+  box-shadow: none;
+}
+.btn-check:checked+.input-div {
+  box-shadow: none;
   border: 2px solid #17386B;
   transform: scale(1.1);
 }
@@ -278,6 +288,10 @@ html {
   #input-70 {
     width: 80%;
   }
+  .input-btn {
+    margin: 1rem 0.5rem;
+    width: 30%;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -312,6 +326,7 @@ html {
   }
   .input-btn {
     margin: 1rem 0.5rem;
+    width: 30%;
   }
   .input-first {
     padding: 10px;
@@ -319,5 +334,8 @@ html {
   }
   .input-second {
     padding: 10px;
+  }
+  .input-div {
+    width: 30%;
   }
 }
