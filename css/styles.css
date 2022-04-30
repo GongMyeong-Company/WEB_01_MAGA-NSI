@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "p-b";
+  src: url(/fonts/Pretendard-Bold.otf);
+}
+@font-face {
+  font-family: "p-r";
+  src: url(/fonts/GowunDodum-Regular.ttf);
+}
+@font-face {
+  font-family: "p-l";
+  src: url(/fonts/Pretendard-ExtraLight.otf);
+}
+* {
+  font-family: "p-r";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.float {
+  clear: both;
+}
+.th {
+  border: 1px solid red;
+}
+
+
+html {
+  font-size: 16px;
+}
+/* --------------------네비게이션바-------------------- */
+.navbar-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+.navbar-logo {
+  width: 12rem;
+  height: 4.7rem;
+  background-image: url(/images/MEGA-LOGO.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+.navbar-sns {
+  float: right;
+  margin-top: 17px;
+}
+.sns-list {
+  float: left;
+  list-style: none;
+}
+.sns-link {
+  text-decoration: none;
+  margin-left: 20px;
+}
+.sns-link img {
+  width: 3rem;
+}
+/* --------------------카드슬라이드-------------------- */
+.input-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+}
+.input-container h1 {
+  font-size: 2rem;
+  color: lightgray;
+  text-align: center;
+  font-family: "p-r";
+  margin-bottom: 20px;
+}
+/* ---------------------------------- */
+.input-first {
+  width: 100%;
+  padding: 20px;
+  border-right: 1px solid lightgray;
+}
+.input-first h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "p-b";
+}
+.input-first input {
+  width: 99%;
+  height: 2.2rem;
+  border: 1px solid lightgray;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "p-l";
+}
+#input-70 {
+  width: 85%;
+}
+.input-div-group {
+  display: flex;
+  justify-content:space-around;
+  position: relative;
+}
+.input-div {
+  width: 30%;
+  height: 3rem;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 1.5rem;
+  padding-top: 5px;
+}
+.btn-outline-primary {
+  border: 1px solid #17386B;
+  color: #17386B;
+}
+.btn-check:checked+.btn-outline-primary {
+  background-color: #17386B;
+  border: 1px solid #17386B;
+  box-shadow: none;
+}
+.btn-check:hover+.btn-outline-primary {
+  background-color: #17386B;
+  border: #17386B;
+  box-shadow: none;
+}
+.btn-check:checked+.btn-outline-primary:focus {
+  background-color: #17386B;
+  border: #17386B;
+  box-shadow: none;
+}
+/* ---------------------------------- */
+.input-second {
+  width: 100%;
+  padding: 20px;
+}
+.input-button {
+  display: flex;
+  justify-content: center;
+}
+.input-button-group button {
+  width: 6rem;
+  height: 6rem;
+  margin: 13px 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.input-check {
+  font-size: 1rem;
+  margin: 20px 15px;
+}
+.agree-button {
+  background-color: black;
+  border: 0;
+  color: white;
+  font-size: 0.7rem;
+  font-family: "p-b";
+  padding: 5px;
+}
+.go-button {
+  width: 90%;
+  height: 4rem;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #17386B;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  font-family: "p-b";
+}
+/* --------------------상담신청박스-------------------- */
+/* --------------------제휴보험사-------------------- */
+/* --------------------컨텐츠영역-------------------- */
+/* --------------------하단고정바-------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+  #input-70 {
+    width: 80%;
+  }
+  .input-first {
+    width: 50%;
+  }
+  .input-second {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+  #input-70 {
+    width: 78%;
+  }
+  .input-first {
+    width: 50%;
+  }
+  .input-second {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .input-container {
+    display: block;
+  }
+  #input-70 {
+    width: 88%;
+  }
+  .input-first {
+    width: 100%;
+    border: 0;
+  }
+  .input-second {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  html {
+    font-size: 13px;
+  }
+  #input-70 {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 498px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar-sns {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 7px;
+  }
+  .navbar-sns {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 5px;
+  }
+  .navbar-sns {
+    margin-top: 4px;
+  }
+}
