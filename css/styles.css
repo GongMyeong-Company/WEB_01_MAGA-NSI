@@ -262,6 +262,9 @@ html {
   .navbar-sns {
     margin-top: 15px;
   }
+  #input-70 {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 400px) {
