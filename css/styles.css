@@ -29,42 +29,43 @@ html {
 }
 /* --------------------네비게이션바-------------------- */
 .navbar-container {
-  width: 100%;
-  overflow: hidden;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
 }
 .navbar-logo {
-  width: 12rem;
-  height: 4.7rem;
-  background-image: url(/images/MEGA-LOGO.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  float: left;
+  width: 20%;
+}
+.navbar-logo img {
+  width: 100%;
 }
 .navbar-sns {
-  float: right;
-  margin-top: 17px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.navbar-sns ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .sns-list {
-  float: left;
   list-style: none;
+  text-align: right;
+  margin-top: 10px;
 }
-.sns-link {
-  text-decoration: none;
-  margin-left: 20px;
+.sns-list img {
+  width: 50%;
 }
-.sns-link img {
-  width: 3rem;
-}
-/* --------------------카드슬라이드-------------------- */
+/* --------------------상담신청 박스-------------------- */
 .input-container {
-  width: 100%;
   overflow: hidden;
-  padding: 10px;
+  padding: 0.5rem;
   display: flex;
+  flex-direction: row;
 }
 .input-container h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: lightgray;
   text-align: center;
   font-family: "p-r";
@@ -72,7 +73,7 @@ html {
 }
 /* ---------------------------------- */
 .input-first {
-  width: 100%;
+  width: 50%;
   padding: 20px;
   border-right: 1px solid lightgray;
 }
@@ -93,7 +94,10 @@ html {
   font-family: "p-l";
 }
 #input-70 {
-  width: 85%;
+  width: 78%;
+}
+.btn-group {
+  width: 18%;
 }
 .input-div-group {
   display: flex;
@@ -107,7 +111,7 @@ html {
   border: 1px solid lightgray;
   border-radius: 10px;
   background-color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-top: 5px;
 }
 .btn-outline-primary {
@@ -131,24 +135,26 @@ html {
 }
 /* ---------------------------------- */
 .input-second {
-  width: 100%;
+  width: 50%;
   padding: 20px;
 }
 .input-button {
   display: flex;
   justify-content: center;
 }
-.input-button-group button {
-  width: 6rem;
-  height: 6rem;
-  margin: 13px 10px;
+.input-btn {
+  width: 15%;
+  margin: 2rem 1rem;
   background-color: white;
   border: 1px solid lightgray;
   border-radius: 10px;
 }
+.input-btn img {
+  width: 85%;
+}
 .input-check {
   font-size: 1rem;
-  margin: 20px 15px;
+  margin: 25px 15px;
 }
 .agree-button {
   background-color: black;
@@ -171,7 +177,6 @@ html {
   font-size: 2rem;
   font-family: "p-b";
 }
-/* --------------------상담신청박스-------------------- */
 /* --------------------제휴보험사-------------------- */
 /* --------------------컨텐츠영역-------------------- */
 /* --------------------하단고정바-------------------- */
@@ -184,57 +189,46 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1400px) {
-  #input-70 {
-    width: 80%;
+@media screen and (max-width:991px) {
+  .container {
+    margin: 0;
+    padding: 0;
+    max-width: 991px;
+  }
+  .input-container {
+    flex-direction: column;
   }
   .input-first {
-    width: 50%;
+    width: 100%;
   }
   .input-second {
-    width: 50%;
+    width: 100%;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 15px;
   }
-  #input-70 {
-    width: 78%;
+  .container {
+    margin: 0;
+    padding: 0;
+    max-width: 768px;
   }
-  .input-first {
-    width: 50%;
+  .navbar-container {
+    padding: 0.8em;
   }
-  .input-second {
-    width: 50%;
+  .navbar-sns ul {
+    padding: 0;
   }
-}
-@media screen and (max-width: 992px) {
-  html {
-    font-size: 14px;
+  .sns-list {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .sns-list img {
+    width: 70%;
   }
   .input-container {
-    display: block;
-  }
-  #input-70 {
-    width: 88%;
+    flex-direction: column;
   }
   .input-first {
     width: 100%;
@@ -243,50 +237,42 @@ html {
   .input-second {
     width: 100%;
   }
-}
-@media screen and (max-width: 770px) {
-  html {
-    font-size: 13px;
-  }
-  #input-70 {
-    width: 83%;
-  }
-}
-@media screen and (max-width: 498px) {
-  html {
-    font-size: 12px;
-  }
-  .container {
-    padding: 0;
-  }
-  .navbar-sns {
-    margin-top: 15px;
-  }
   #input-70 {
     width: 80%;
   }
 }
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   html {
-    font-size: 11px;
-  }
-  .navbar-sns {
-    margin-top: 8px;
+    font-size: 14px;
   }
   .container {
     padding: 0;
+    margin: 0;
+    max-width: 480px;
   }
-  #input-70 {
-    width: 78%;
+  .navbar-container {
+    padding: 0.5em;
   }
-}
-
-@media screen and (max-width: 300px) {
-  html {
-    font-size: 5px;
+  .navbar-sns ul {
+    padding: 0;
   }
-  .navbar-sns {
-    margin-top: 4px;
+  .sns-list {
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  .sns-list img {
+    width: 65%;
+  }
+  .input-first h2 {
+    font-size: 1.2rem;
+  }
+  .input-btn {
+    margin: 1rem 0.5rem;
+  }
+  .input-first {
+    padding: 10px;
+  }
+  .input-second {
+    padding: 10px;
   }
 }
