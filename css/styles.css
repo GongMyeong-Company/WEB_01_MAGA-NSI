@@ -6,6 +6,11 @@ input, textarea, button {
   -moz-border-radius: 0; 
 }
 
+@keyframes blink-effect { 
+  50% { opacity: 0; 
+  } 
+}
+
 @font-face {
   font-family: "p-b";
   src: url(/fonts/Pretendard-Bold.otf);
@@ -226,6 +231,27 @@ html {
 /* --------------------제휴보험사-------------------- */
 /* --------------------컨텐츠영역-------------------- */
 /* --------------------하단고정바-------------------- */
+.fixbar {
+  width: 100%;
+  background-color: #17386B;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.fixbar p {
+  margin: 0;
+  animation: blink-effect 1.5s step-end infinite;
+}
+.fixbar a {
+  font-family: 'p-b';
+  text-decoration: none;
+  font-size: 35px;
+  color: white;
+}
 
 
 
@@ -250,6 +276,9 @@ html {
   }
   .input-second {
     width: 100%;
+  }
+  .fixbar {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {

@@ -31,93 +31,95 @@
             </div>
         </nav>
         <!-----------------------------------------------메인 카드 슬라이드------------------------------------------------------->
-        <main>
-            <div class="mainslide-container">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/NOTE1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/NOTE2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/NOTE3.png" class="d-block w-100" alt="...">
-                        </div>
+        <div class="mainslide-container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/NOTE1.png" class="d-block w-100" alt="...">
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="/images/NOTE2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/NOTE3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!------------------------------------------------상담신청 박스--------------------------------------------------------->
+        <div class="input-container">
+            <div class="input-first">
+                <h1>STEP 01. 개인정보 작성</h1>
+                <h2>이름</h2>
+                <input id="input-70" type="text" placeholder="이름을 입력하세요">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">남</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">여</label>
+                </div>
+                <h2>생년월일</h2>
+                <input class="text-input" type="text" placeholder="생년월일을 입력하세요 (예 : 19950821)">
+                <h2>전화번호</h2>
+                <input class="text-input" type="text" placeholder="휴대폰번호를 입력하세요 ( 숫자만 입력 )">
+                <h2>신청내용</h2>
+                <div class="input-div-group">
+                    <input type="checkbox" class="btn-check" id="btn-check-1">
+                    <label class="btn input-div" for="btn-check-1">보험가입</label>
+
+                    <input type="checkbox" class="btn-check" id="btn-check-2">
+                    <label class="btn input-div" for="btn-check-2">보장분석</label>
+
+                    <input type="checkbox" class="btn-check" id="btn-check-3">
+                    <label class="btn input-div" for="btn-check-3">리모델링</label>
                 </div>
             </div>
-            <!------------------------------------------------상담신청 박스--------------------------------------------------------->
-            <div class="input-container">
-                <div class="input-first">
-                    <h1>STEP 01. 개인정보 작성</h1>
-                    <h2>이름</h2>
-                    <input id="input-70" type="text" placeholder="이름을 입력하세요">
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnradio1">남</label>
-
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio2">여</label>
+            <div class="input-second">
+                <h1>STEP 02. 상담받으실 종목 선택</h1>
+                <div class="input-button-group">
+                    <div class="input-button">
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-1.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-2.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-3.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-4.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-5.png" alt=""></button>
                     </div>
-                    <h2>생년월일</h2>
-                    <input class="text-input" type="text" placeholder="생년월일을 입력하세요 (예 : 19950821)">
-                    <h2>전화번호</h2>
-                    <input class="text-input" type="text" placeholder="휴대폰번호를 입력하세요 ( 숫자만 입력 )">
-                    <h2>신청내용</h2>
-                    <div class="input-div-group">
-                        <input type="checkbox" class="btn-check" id="btn-check-1">
-                        <label class="btn input-div" for="btn-check-1">보험가입</label>
-
-                        <input type="checkbox" class="btn-check" id="btn-check-2">
-                        <label class="btn input-div" for="btn-check-2">보험가입</label>
-
-                        <input type="checkbox" class="btn-check" id="btn-check-3">
-                        <label class="btn input-div" for="btn-check-3">보험가입</label>
+                    <div class="input-button">
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-6.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-7.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-8.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-9.png" alt=""></button>
+                        <button class="input-btn"><img src="/images/BUTTON/BUTTON-10.png" alt=""></button>
                     </div>
                 </div>
-                <div class="input-second">
-                    <h1>STEP 02. 상담받으실 종목 선택</h1>
-                    <div class="input-button-group">
-                        <div class="input-button">
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-1.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-2.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-3.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-4.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-5.png" alt=""></button>
-                        </div>
-                        <div class="input-button">
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-6.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-7.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-8.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-9.png" alt=""></button>
-                            <button class="input-btn"><img src="/images/BUTTON/BUTTON-10.png" alt=""></button>
-                        </div>
-                    </div>
-                    <input class="input-check" type="checkbox">개인정보수집 및 이용 동의
-                    <button class="agree-button">보기</button>
-                    <button class="go-button">무 료 상 담 신 청</button>
-                </div>
+                <input class="input-check" type="checkbox">개인정보수집 및 이용 동의
+                <button class="agree-button">보기</button>
+                <button class="go-button">무 료 상 담 신 청</button>
             </div>
-    </div>
-    <!-------------------------------------------------제휴 보험사---------------------------------------------------------->
-    <div class="subslide-container">
+        </div>
+        <!-------------------------------------------------제휴 보험사---------------------------------------------------------->
+        <div class="subslide-container">
 
+        </div>
+        <div class="fixbar">
+            <p>상담만 받아도 스타벅스 커피쿠폰 증정</p>
+            <a href="#navbar">상담신청 남기기</a>
+        </div>
     </div>
     </main>
     <!-------------------------------------------------하단 고정바---------------------------------------------------------->
 
-    <!-------------------------------------------------하단 고정바---------------------------------------------------------->
 
 
 
