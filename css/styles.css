@@ -1,8 +1,6 @@
 /* Safari 9.0+ */
 input, textarea, button { 
-  appearance: none; 
   -moz-appearance: none; 
-  -webkit-appearance: none; 
   border-radius: 0; 
   -webkit-border-radius: 0; 
   -moz-border-radius: 0; 
@@ -82,7 +80,7 @@ html {
   color: lightgray;
   text-align: center;
   font-family: "p-r";
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 /* ---------------------------------- */
 .input-first {
@@ -95,7 +93,7 @@ html {
   margin-bottom: 10px;
   font-family: "p-b";
 }
-.input-first input {
+.text-input {
   width: 99%;
   height: 2.2rem;
   border: 1px solid lightgray;
@@ -108,6 +106,14 @@ html {
 }
 #input-70 {
   width: 78%;
+  height: 2.2rem;
+  border: 1px solid lightgray;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "p-l";
 }
 .btn-group {
   width: 18%;
@@ -118,14 +124,15 @@ html {
   position: relative;
 }
 .input-div {
-  width: 30%;
+  width: 25%;
   height: 3rem;
   text-align: center;
   border: 1px solid lightgray;
   border-radius: 10px;
   background-color: white;
   font-size: 1.2rem;
-  padding-top: 5px;
+  padding-top: 3px;
+  margin-top: 20px;
 }
 .input-div:hover {
   border: 2px solid #17386B;
@@ -181,7 +188,7 @@ html {
 }
 .input-check {
   font-size: 1rem;
-  margin: 25px 15px;
+  margin: 18px 15px;
 }
 .agree-button {
   background-color: black;
@@ -283,6 +290,12 @@ html {
   }
   .navbar-container {
     padding: 0.5em;
+  }
+  .navbar-logo {
+    width: 30%;
+  }
+  .navbar-sns {
+    width: 40%;
   }
   .navbar-sns ul {
     padding: 0;
