@@ -254,7 +254,7 @@ html {
 }
 @media screen and (max-width: 498px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   .navbar-sns {
     margin-top: 15px;
