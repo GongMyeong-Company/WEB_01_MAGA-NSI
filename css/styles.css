@@ -254,7 +254,7 @@ html {
 }
 @media screen and (max-width: 498px) {
   html {
-    font-size: 15px;
+    font-size: 12px;
   }
   .container {
     padding: 0;
