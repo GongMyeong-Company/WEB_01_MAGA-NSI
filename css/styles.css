@@ -134,9 +134,6 @@ html {
   padding-top: 8px;
   margin-top: 20px;
 }
-.input-div:hover {
-  border: 2px solid #17386B;
-}
 .btn-check:checked+.input-div:focus {
   box-shadow: none;
 }
