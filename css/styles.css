@@ -1,10 +1,11 @@
 /* Safari 9.0+ */
-
-_::-webkit-:not(:root:root), .safari_only {
-
-  color:#0000FF; 
-  background-color:#CCCCCC; 
-
+input, textarea, button { 
+  appearance: none; 
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  border-radius: 0; 
+  -webkit-border-radius: 0; 
+  -moz-border-radius: 0; 
 }
 
 @font-face {
