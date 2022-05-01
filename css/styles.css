@@ -17,7 +17,7 @@ input, textarea, button {
 }
 @font-face {
   font-family: "p-r";
-  src: url(/fonts/GowunDodum-Regular.ttf);
+  src: url(/fonts/Pretendard-Regular.otf);
 }
 @font-face {
   font-family: "p-l";
@@ -34,6 +34,11 @@ input, textarea, button {
 }
 .th {
   border: 1px solid red;
+}
+.span {
+  font-family: 'p-b';
+  color: #67AFD8;
+  transform: scale(1.6)
 }
 
 
@@ -281,6 +286,30 @@ html {
 .main-second-img {
   margin: 5rem 0;
 }
+/* ------------------------------ */
+.main-underbar {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(232, 232, 232);
+}
+.main-underbar h1 {
+  font-size: 1.5rem;
+  font-family: "p-b";
+  margin-bottom: 20px;
+}
+.main-underbar ul {
+  padding-left: 15px;
+}
+.main-underbar li {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.main-underbar h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "p-b";
+}
 /* --------------------하단고정바-------------------- */
 .fixbar {
   width: 100%;
@@ -304,8 +333,17 @@ html {
   font-size: 35px;
   color: white;
 }
-
-
+/* --------------------하단 푸터-------------------- */
+footer {
+  width: 100%;
+  background-color: #3b3b3b;
+  padding: 2rem;
+}
+footer p {
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
+}
 
 
 
