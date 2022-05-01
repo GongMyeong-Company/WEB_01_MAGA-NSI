@@ -252,7 +252,7 @@ html {
 }
 .main-first-txt {
   width: 100%;
-  margin: 30px 20px;
+  margin: 30px 0;
   text-align: center;
 }
 .main-first-txt h1 {
@@ -284,6 +284,7 @@ html {
   font-size: 2rem;
 }
 .main-second-img {
+  width: 100%;
   margin: 5rem 0;
 }
 /* ------------------------------ */
@@ -340,7 +341,7 @@ footer {
   padding: 2rem;
 }
 footer p {
-  color: white;
+  color: rgb(239, 238, 238);
   margin: 0;
   font-size: 1.2rem;
 }
@@ -369,9 +370,6 @@ footer p {
   }
   .subslide-container h1 {
     font-size: 2rem;
-  }
-  .footer {
-    padding: 1.5rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -412,6 +410,21 @@ footer p {
   .input-btn {
     width: 15%;
     margin: 1rem 0.5rem;
+  }
+  .main-underbar {
+    padding: 10px;
+  }
+  .main-underbar li {
+    font-size: 1rem;
+  }
+  .main-underbar h3 {
+    font-size: 1.3rem;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer p {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -462,6 +475,39 @@ footer p {
   .subslide-container h1 {
     margin: 30px 0;
   }
+  .main-first-txt h1 {
+    font-size: 3rem;
+  }
+  .main-first-txt h2 {
+    font-size: 2rem;
+  }
+  .main-second-txt h2 {
+    font-size: 2rem;
+  }
+  .main-second-txt p {
+    font-size: 1.5rem;
+  }
+ .main-second-img img {
+  width: 60%; 
+ }
+ .main-underbar {
+   padding: 7px;
+ }
+ .main-underbar h1 {
+   font-size: 1.3rem;
+ }
+ .main-underbar li {
+   font-size: 0.8rem;
+ }
+ .main-underbar h3 {
+   font-size: 1rem;
+ }
+ footer {
+   padding: 1rem;
+ }
+ footer p {
+   font-size: 0.8rem;
+ }
 }
 @media screen and (max-width: 300px) {
   html {
@@ -469,5 +515,8 @@ footer p {
   }
   .container {
     max-width: 300px;
+  }
+  .main-underbar li {
+    font-size: 0.2rem;
   }
 }
