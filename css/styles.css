@@ -182,7 +182,6 @@ html {
 .input-button {
   display: flex;
   justify-content: center;
-  overflow: scroll;
 }
 .input-btn {
   width: 13%;
@@ -360,7 +359,7 @@ html {
     font-size: 1.2rem;
   }
   .input-btn {
-    width: 17%;
+    width: 15%;
     margin: 1rem 0.5rem;
   }
   .input-first {
@@ -372,5 +371,13 @@ html {
   }
   .input-div {
     width: 30%;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 300px;
   }
 }
