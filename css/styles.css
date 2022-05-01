@@ -370,6 +370,9 @@ footer p {
   .subslide-container h1 {
     font-size: 2rem;
   }
+  .footer {
+    padding: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
