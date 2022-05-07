@@ -40,6 +40,16 @@ input, textarea, button {
   color: #67AFD8;
   transform: scale(1.6)
 }
+i {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.btn-span {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
 
 
 html {
@@ -131,6 +141,8 @@ html {
 }
 .text-input:focus+.underline {
   width: 99%;
+  left: 40%;
+  transform: translateX(-40%);
   transition: all 0.5s ease-out;
 }
 #input-name {
@@ -153,11 +165,13 @@ html {
   position: absolute;
   bottom: 20px;
   width: 0;
-  height: 2px;
+  height: 0.1rem;
   background-color: #17386B;
 }
 #input-name:focus+.underline {
   width: 78%;
+  left: 31%;
+  transform: translateX(-40%);
   transition: all 0.5s ease-out;
 }
 .btn-group {
@@ -179,8 +193,12 @@ html {
   padding-top: 8px;
   margin-top: 20px;
 }
+.input-div:focus {
+  color: white;
+}
 .btn-check:checked+.input-div:focus {
   box-shadow: none;
+  color: white;
 }
 .btn-check:focus+.btn:focus {
   box-shadow: none;
@@ -193,13 +211,12 @@ html {
   border: 2px solid #17386B;
   background-color: #17386B;
   color: white;
-  transform: scale(1.1);
+  transition: 'background-color' 0.2s;
 }
 .btn-check:hover+.input-div {
   box-shadow: none;
   border: 2px solid #17386B;
-  background-color: #17386B;
-  color: white;
+  color: #17386B;
   transform: scale(1.1);
 }
 .btn-outline-primary {
@@ -239,6 +256,14 @@ html {
   background-color: white;
   border: 1px solid lightgray;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-btn p {
+  margin: 0;
+  font-size: 0.8rem;
 }
 .input-btn:hover {
   border: 2px solid #17386B;
@@ -246,6 +271,7 @@ html {
 .btn-check:checked+.input-btn {
   border: 2px solid #17386B;
   transform: scale(1.2);
+  transition: all 0.2s;
 }
 .input-check {
   font-size: 1rem;
@@ -394,35 +420,29 @@ footer p {
   font-size: 1.2rem;
 }
 /* --------------------애니메이션-------------------- */
-.percent-animation-1 {
-  width: 4rem;
-  height: 15rem;
-  background-color: #67AFD8;
+.percent {
+  width: 3rem;
   margin-right: 1rem;
   border-radius: 10px;
+}
+.percent-animation-1 {
+  height: 12rem;
+  background-color: #67AFD8;
   animation: percent-1 0.8s ease-in-out;
 }
 .percent-animation-2 {
-  width: 4rem;
-  height: 10rem;
+  height: 6rem;
   background-color: #17386B;
-  margin-right: 1rem;
-  border-radius: 10px;
   animation: percent-2 1.2s ease-in-out;
 }
 .percent-animation-3 {
-  width: 4rem;
-  height: 7rem;
+  height: 4rem;
   background-color: #67AFD8;
-  margin-right: 1rem;
-  border-radius: 10px;
   animation: percent-3 1.5s ease-in-out;
 }
 .percent-animation-4 {
-  width: 4rem;
-  height: 12rem;
+  height: 8rem;
   background-color: #67AFD8;
-  border-radius: 10px;
   animation: percent-4 2s ease-in-out;
 }
 @keyframes percent-1 {
@@ -430,7 +450,7 @@ footer p {
     height: 0;
   }
   to {
-    height: 15rem;
+    height: 12rem;
   }
 }
 @keyframes percent-2 {
@@ -438,7 +458,7 @@ footer p {
     height: 0;
   }
   to {
-    height: 10rem;
+    height: 6rem;
   }
 }
 @keyframes percent-3 {
@@ -446,7 +466,7 @@ footer p {
     height: 0;
   }
   to {
-    height: 7rem;
+    height: 4rem;
   }
 }
 @keyframes percent-4 {
@@ -454,7 +474,7 @@ footer p {
     height: 0;
   }
   to {
-    height: 12rem;
+    height: 8rem;
   }
 }
 @keyframes percent-disappear1 {
@@ -609,6 +629,9 @@ footer p {
   footer p {
     font-size: 0.9rem;
   }
+  .percent {
+    margin-right: 0.5rem;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -701,6 +724,7 @@ footer p {
  .fixbar a {
    font-size: 23px;
  }
+ 
 }
 @media screen and (max-width: 304px) {
   html {
