@@ -193,12 +193,8 @@ html {
   padding-top: 8px;
   margin-top: 20px;
 }
-.input-div:focus {
-  color: white;
-}
 .btn-check:checked+.input-div:focus {
   box-shadow: none;
-  color: white;
 }
 .btn-check:focus+.btn:focus {
   box-shadow: none;
@@ -211,13 +207,16 @@ html {
   border: 2px solid #17386B;
   background-color: #17386B;
   color: white;
-  transition: 'background-color' 0.2s;
+  transition: all 0.3s;
 }
 .btn-check:hover+.input-div {
   box-shadow: none;
   border: 2px solid #17386B;
-  color: #17386B;
+  color: black;
   transform: scale(1.1);
+}
+.btn-check:focus+.input-div:hover {
+  color: white;
 }
 .btn-outline-primary {
   border: 1px solid #17386B;
@@ -531,7 +530,20 @@ footer p {
 }
 
 
-
+@media screen and (max-width:1200px) {
+  i {
+    font-size: 2rem;
+  }
+  .input-btn {
+    padding: 3px 6px;
+  }
+  .input-btn p {
+    font-size: 0.5rem;
+  }
+  .btn-span {
+    font-size: 0.5rem;
+  }
+}
 @media screen and (max-width:991px) {
   .container {
     margin: 0;
@@ -724,7 +736,15 @@ footer p {
  .fixbar a {
    font-size: 23px;
  }
- 
+ i {
+   font-size: 1.7rem;
+ }
+ .input-btn {
+  padding: 2px 3px;
+ }
+ .btn-span {
+   font-size: 1px;
+ }
 }
 @media screen and (max-width: 304px) {
   html {
