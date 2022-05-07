@@ -207,13 +207,14 @@ html {
   border: 2px solid #17386B;
   background-color: #17386B;
   color: white;
-  transition: all 0.3s;
 }
 .btn-check:hover+.input-div {
   box-shadow: none;
   border: 2px solid #17386B;
-  color: black;
+  background-color: #17386B;
+  color: white;
   transform: scale(1.1);
+  transition: all 0.3s;
 }
 .btn-check:focus+.input-div:hover {
   color: white;
@@ -743,7 +744,7 @@ footer p {
   padding: 2px 3px;
  }
  .btn-span {
-   font-size: 1px;
+   font-size: 0.3rem;
  }
 }
 @media screen and (max-width: 304px) {
