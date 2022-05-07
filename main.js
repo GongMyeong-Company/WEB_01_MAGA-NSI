@@ -10,11 +10,21 @@ window.addEventListener('scroll', function(){
     let value = window.scrollY;
     console.log("scrollY", value);
 
-    if ( value > 2300) {
+    if ( screen.width > 1200 && value > 2400) {
        percentAnimation1.style.animation = 'percent-1 0.8s ease-in-out';
        percentAnimation2.style.animation = 'percent-2 1.2s ease-in-out';
        percentAnimation3.style.animation = 'percent-3 1.5s ease-in-out';
        percentAnimation4.style.animation = 'percent-4 2s ease-in-out';
+    } else if ( 500 < screen.width < 1200 && value > 2200) {
+        percentAnimation1.style.animation = 'percent-1 0.8s ease-in-out';
+        percentAnimation2.style.animation = 'percent-2 1.2s ease-in-out';
+        percentAnimation3.style.animation = 'percent-3 1.5s ease-in-out';
+        percentAnimation4.style.animation = 'percent-4 2s ease-in-out';
+    } else if ( screen.width < 500 && value > 1500 ) {
+        percentAnimation1.style.animation = 'percent-1 0.8s ease-in-out';
+        percentAnimation2.style.animation = 'percent-2 1.2s ease-in-out';
+        percentAnimation3.style.animation = 'percent-3 1.5s ease-in-out';
+        percentAnimation4.style.animation = 'percent-4 2s ease-in-out';
     }else {
         percentAnimation1.style.animation = 'percent-disappear1 0.5s ease-in-out forwards';
         percentAnimation2.style.animation = 'percent-disappear2 0.5s ease-in-out forwards';
@@ -22,10 +32,14 @@ window.addEventListener('scroll', function(){
         percentAnimation4.style.animation = 'percent-disappear4 0.5s ease-in-out forwards';
     }
 
-    if( value > 950) {
+    if( screen.width > 1200 && value > 950) {
+        textAnimation.style.animation = 'text-1 1.5s ease-out'
+    }else if (500<screen.width<1200 && value > 600) {
+        textAnimation.style.animation = 'text-1 1.5s ease-out'
+    }else if (this.screen.width<500 && value > 800) {
         textAnimation.style.animation = 'text-1 1.5s ease-out'
     }else {
-        textAnimation.style.animation = 'text-disappear 1.5s ease-out forwards'
+        textAnimation.style.animation = 'text-disappear 1.5s ease-out'
     }
 });
 
