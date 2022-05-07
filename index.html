@@ -64,19 +64,28 @@
             <input type="hidden" name="contact_number">
             <div class="input-first">
                 <h1>STEP 01. 개인정보 작성</h1>
-                <h2>이름</h2>
-                <input id="input-name" type="text" placeholder="이름을 입력하세요">
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                    <label class="btn btn-outline-primary" for="btnradio1">남</label>
+                <div class="name-container">
+                    <h2>이름</h2>
+                    <input id="input-name" type="text" placeholder="이름을 입력하세요">
+                    <div class="underline"></div>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">남</label>
 
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio2">여</label>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">여</label>
+                    </div>
                 </div>
-                <h2>생년월일</h2>
-                <input id="input-birth" class="text-input" type="text" placeholder="생년월일을 입력하세요 (예 : 19950821)">
-                <h2>전화번호</h2>
-                <input id="input-tel" class="text-input" type="text" placeholder="휴대폰번호를 입력하세요 ( 숫자만 입력 )">
+                <div class="birth-container">
+                    <h2>생년월일</h2>
+                    <input id="input-birth" class="text-input" type="text" placeholder="생년월일을 입력하세요 (예 : 19950821)">
+                    <div class="underline"></div>
+                </div>
+                <div class="tel-container">
+                    <h2>전화번호</h2>
+                    <input id="input-tel" class="text-input" type="text" placeholder="휴대폰번호를 입력하세요 ( 숫자만 입력 )">
+                    <div class="underline"></div>
+                </div>
                 <h2>신청내용</h2>
                 <div class="input-div-group">
                     <input type="radio" class="btn-check" id="btn-check-1" name="input-1" value="보험가입">
@@ -160,7 +169,7 @@
         <!-------------------------------------------------메인 컨텐츠---------------------------------------------------------->
         <div class="main-content-container">
             <div class="main-content-first">
-                <div class="main-first-txt">
+                <div id="text-animation" class="main-first-txt">
                     <h1>아직도 <span class="span">여기저기</span></h1>
                     <h2>찾아 다니면서 보험비교<br>
                         하고 계신가요?</h2>
@@ -174,8 +183,11 @@
                     <h2>매달 내는 보험료<br>
                         나에게 <span class="span">적절</span>하신가요?</h2>
                 </div>
-                <div class="main-second-img">
-                    <img src="/images/P5.png" alt="">
+                <div class="main-second-percent">
+                    <div id="percent-animation-1" class="percent-animation-1"></div>
+                    <div id="percent-animation-2" class="percent-animation-2"></div>
+                    <div id="percent-animation-3" class="percent-animation-3"></div>
+                    <div id="percent-animation-4" class="percent-animation-4"></div>
                 </div>
                 <div class="main-second-txt">
                     <p>내 월급은 200만원인데 매달<br>

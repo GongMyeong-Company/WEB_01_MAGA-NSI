@@ -78,7 +78,6 @@ html {
 .sns-list img {
   width: 50%;
 }
-/* --------------------슬라이드 박스-------------------- */
 /* --------------------상담신청 박스-------------------- */
 .input-container {
   overflow: hidden;
@@ -99,6 +98,15 @@ html {
   padding: 20px;
   border-right: 1px solid lightgray;
 }
+.name-container {
+  position: relative;
+}
+.birth-container {
+  position: relative;
+}
+.tel-container {
+  position: relative;
+}
 .input-first h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -115,6 +123,13 @@ html {
   text-align: center;
   font-family: "p-l";
 }
+.text-input:focus {
+  outline: none;
+}
+.text-input:focus+.underline {
+  width: 99%;
+  transition: all 0.5s ease-out;
+}
 #input-name {
   width: 78%;
   height: 2.2rem;
@@ -125,6 +140,22 @@ html {
   margin-bottom: 20px;
   text-align: center;
   font-family: "p-l";
+  position: relative;
+}
+#input-name:focus{
+  outline: none;
+}
+.underline {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  width: 0;
+  height: 2px;
+  background-color: #17386B;
+}
+#input-name:focus+.underline {
+  width: 78%;
+  transition: all 0.5s ease-out;
 }
 .btn-group {
   width: 18%;
@@ -259,7 +290,8 @@ html {
 .main-first-txt {
   width: 100%;
   margin: 30px 0;
-  text-align: center;
+  position: relative;
+  left: 450px;
 }
 .main-first-txt h1 {
   font-size: 5rem;
@@ -288,6 +320,13 @@ html {
 }
 .main-second-txt p {
   font-size: 2rem;
+}
+.main-second-percent {
+  width: 100%;
+  margin: 5rem 0;
+  display: flex;
+  transform: scaleY(-1);
+  justify-content: center;
 }
 .main-second-img {
   width: 100%;
@@ -352,10 +391,122 @@ footer p {
   margin: 0;
   font-size: 1.2rem;
 }
-
-
-
-
+/* --------------------애니메이션-------------------- */
+.percent-animation-1 {
+  width: 4rem;
+  height: 15rem;
+  background-color: #67AFD8;
+  margin-right: 1rem;
+  border-radius: 10px;
+  animation: percent-1 0.8s ease-in-out;
+}
+.percent-animation-2 {
+  width: 4rem;
+  height: 10rem;
+  background-color: #17386B;
+  margin-right: 1rem;
+  border-radius: 10px;
+  animation: percent-2 1.2s ease-in-out;
+}
+.percent-animation-3 {
+  width: 4rem;
+  height: 7rem;
+  background-color: #67AFD8;
+  margin-right: 1rem;
+  border-radius: 10px;
+  animation: percent-3 1.5s ease-in-out;
+}
+.percent-animation-4 {
+  width: 4rem;
+  height: 12rem;
+  background-color: #67AFD8;
+  border-radius: 10px;
+  animation: percent-4 2s ease-in-out;
+}
+@keyframes percent-1 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 15rem;
+  }
+}
+@keyframes percent-2 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 10rem;
+  }
+}
+@keyframes percent-3 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 7rem;
+  }
+}
+@keyframes percent-4 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 12rem;
+  }
+}
+@keyframes percent-disappear1 {
+  from {
+    height: 15rem;
+  }
+  to {
+    height: 0;
+  }
+}
+@keyframes percent-disappear2 {
+  from {
+    height: 10rem;
+  }
+  to {
+    height: 0;
+  }
+}
+@keyframes percent-disappear3 {
+  from {
+    height: 7rem;
+  }
+  to {
+    height: 0;
+  }
+}
+@keyframes percent-disappear4 {
+  from {
+    height: 12rem;
+  }
+  to {
+    height: 0;
+  }
+}
+@keyframes text-1 {
+  from {
+    left: -1200px;
+    opacity: 0;
+  }
+  to {
+    left: 450px;
+    opacity: 1;
+  }
+}
+@keyframes text-disappear {
+  from {
+    left: 450px;
+    opacity: 1;
+  }
+  to {
+    left: -1200px;
+    opacity: 0;
+  }
+}
 
 
 
