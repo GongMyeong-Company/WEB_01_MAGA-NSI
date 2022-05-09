@@ -38,13 +38,13 @@
                 data-interval="1000">
                 <div class=" carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/images/NOTE3.png" class="d-block w-100" alt="...">
+                        <img src="/images/E_NOTE1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/NOTE2.png" class="d-block w-100" alt="...">
+                        <img src="/images/E_NOTE2.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/NOTE1.png" class="d-block w-100" alt="...">
+                        <img src="/images/E_NOTE3.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -66,7 +66,7 @@
                 <h1>STEP 01. 개인정보 작성</h1>
                 <div class="name-container">
                     <h2>이름</h2>
-                    <input id="input-name" type="text" placeholder="이름을 입력하세요">
+                    <input maxlength="5" id="input-name" type="text" placeholder="이름을 입력하세요">
                     <div class="underline"></div>
                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -78,12 +78,14 @@
                 </div>
                 <div class="birth-container">
                     <h2>생년월일</h2>
-                    <input id="input-birth" class="text-input" type="text" placeholder="생년월일을 입력하세요 (예 : 19950821)">
+                    <input maxlength="8" oninput="birthMaxlength(this)" id="input-birth" class="text-input"
+                        type="number" placeholder="생년월일을 입력하세요 (예 : 19950821)">
                     <div class="underline"></div>
                 </div>
                 <div class="tel-container">
                     <h2>전화번호</h2>
-                    <input id="input-tel" class="text-input" type="text" placeholder="휴대폰번호를 입력하세요 ( 숫자만 입력 )">
+                    <input maxlength="11" oninput="telMaxlength(this)" id="input-tel" class="text-input" type="number"
+                        placeholder="휴대폰번호를 입력하세요 ( 숫자만 입력 )">
                     <div class="underline"></div>
                 </div>
                 <h2>신청내용</h2>
@@ -169,6 +171,32 @@
                 <button onclick="goEmail()" class="go-button">무 료 상 담 신 청</button>
             </div>
         </div>
+        <!-------------------------------------------------상담이벤트 사은품---------------------------------------------------------->
+        <div class="present-container">
+            <div class="present-img">
+                <img src="/images/E_NOTE2.png" style="margin-bottom: 0;">
+            </div>
+            <div class="present-txt">
+                <h4>상담신청이 필요하신 분</h4>
+                <ul>
+                    <li>
+                        <p>지금 현재 가입을 원하는 상품이 있는 경우 (신규가입)</p>
+                    </li>
+                    <li>
+                        <p>내 보험의 정확한 보장 내용이 궁금한 경우 (보장분석)</p>
+                    </li>
+                    <li>
+                        <p>목적자금, 노후자금 등 연금준비 및 짠텐크를 이용한 보험 재테크</p>
+                    </li>
+                    <li>
+                        <p>과한 보험료 납입이 어려우신 분 (리모델링)</p>
+                    </li>
+                    <li>
+                        <p>과거 병력으로 인해 보험가입에 어려움이 있으신 분 (유병자보험)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-------------------------------------------------제휴 보험사---------------------------------------------------------->
         <div class="subslide-container">
             <h1>제 휴 회 사</h1>
@@ -205,13 +233,23 @@
                         하고 계신가요?</h2>
                 </div>
                 <div class="main-first-img">
-                    <img src="/images/PHONE.png" alt="">
+                    <img src="/images/phone2.png" alt="">
+                </div>
+                <div class="main-second-txt">
+                    <p>
+                        가입희망상품 선택 후 상담 신청만<br>
+                        남겨 주시면 전문 담당자가 배정되어<br>
+                        보험 회사별 보험료 비교를 한눈에<br>
+                        볼 수 있도록 안내 해드립니다.
+                    </p>
                 </div>
             </div>
             <div class="main-content-second">
                 <div class="main-second-txt">
-                    <h2>매달 내는 보험료<br>
-                        나에게 <span class="span">적절</span>하신가요?</h2>
+                    <h2><span class="span">매달 내는 보험료</span><br>
+                        나의 소득과 지출에 비해<br>
+                        <span class="span">적절하게</span> 내고 계신가요 ?
+                    </h2>
                 </div>
                 <div class="main-second-percent">
                     <div id="percent-animation-1" class="percent percent-animation-1"></div>
@@ -220,35 +258,37 @@
                     <div id="percent-animation-4" class="percent percent-animation-4"></div>
                 </div>
                 <div class="main-second-txt">
-                    <p>내 월급은 200만원인데 매달<br>
-                        나가는 보험료는 100만원 ?<br>
-                        어쩌다 마주친 그대 모습이</p>
+                    <p>내 소득에 비해 보험료가 과도하게<br>
+                        지출되고 있거나 장기간 유지하기<br>
+                        어려울 정도로 많이 가입 하셨나요 ?</p>
                 </div>
             </div>
             <div class="main-content-second">
                 <div class="main-second-txt">
                     <h2>이중으로 납입하는 보험료<br>
-                        나에게 <span class="span">불필요한</span> 보장 ?</h2>
+                        나에게 <span class="span">불필요한</span> 보장은 ?</h2>
                 </div>
                 <div class="main-second-img">
-                    <img src="/images/P6.png" alt="">
+                    <img src="/images/EP_6.png" alt="">
                 </div>
                 <div class="main-second-txt">
-                    <p>실손 비례보장은 여러건 가입<br>
-                        해도 보장받는 금액은 동일 !</p>
-                    <p>나에게 불필요한 특약이지만<br>
-                        나도 모르게 보험료를 납입 한다면 ?</p>
+                    <p>실손 비례보장 특약은 아무리 여러건<br>
+                        가입 하더라도 보장받는 금액은<br>
+                        동일하다는 사실 알고 계신가요 ?</p>
+                    <p>나의 상황에 맞지않는 불필요한 특약<br>
+                        가입으로 과도한 보험료를<br>
+                        납입하고 계시지 않은가요 ?</p>
                 </div>
             </div>
-            <div class="main-content-first" style=" margin-bottom: 0;">
+            <div class="main-content-first">
                 <div class="main-first-txt">
-                    <h2>개인의 상황에 맞는 상품을<br>
-                        <span class="span">전보험사</span> 비교 해드립니다.
-                    </h2>
+                    <h2>불필요한 보장은 <span class="span">줄이고</span></h2>
+                    <h2>부족한 보장은 <span class="span">보충하고</span></h2>
+                    <br>
+                    <h2><span class="span">전문가</span>를 통한 내보험 보장분석 및</h2>
+                    <h2>리모델링 하고 상담 <span class="span">선물까지</span></h2>
                 </div>
-                <div class="main-first-img" style=" margin-bottom: 0;">
-                    <img src="/images/present.png" alt="">
-                </div>
+
             </div>
         </div>
         <div class="main-underbar">
@@ -322,14 +362,14 @@
         }
 
         function goEmail() {
-            if (get_name.value == '') {
-                alert('이름을 입력 해주세요')
-            } else if (get_birth.value == '') {
-                alert('생년월일을 입력 해주세요')
-            } else if (get_tel.value == '') {
-                alert('전화번호를 입력 해주세요')
+            if (get_name.value == '' || get_name.value.length < 2) {
+                alert('이름을 제대로 입력 해주세요.')
+            } else if (get_birth.value == '' || get_birth.value.length < 8) {
+                alert('생년월일을 제대로 입력 해주세요. (예: 19950821)')
+            } else if (get_tel.value == '' || get_tel.value.length < 11) {
+                alert('휴대폰 번호를 제대로 입력 해주세요. ( 숫자만 입력 )')
             } else if (agreeCheck.checked == false) {
-                alert('개인정보수집 및 이용 동의를 하셔야만 신청이 가능합니다')
+                alert('개인정보수집 및 이용 동의를 하셔야만 신청이 가능합니다.')
             } else {
                 alert('상담신청이 완료되었습니다.')
                 Email.send({

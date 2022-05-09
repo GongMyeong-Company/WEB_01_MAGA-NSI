@@ -10,7 +10,11 @@ input, textarea, button {
   50% { opacity: 0; 
   } 
 }
-
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 @font-face {
   font-family: "p-b";
   src: url(/fonts/Pretendard-Bold.otf);
@@ -44,6 +48,7 @@ i {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 5px;
+  color: #444444;
 }
 .btn-span {
   font-size: 0.7rem;
@@ -198,19 +203,21 @@ html {
 .btn-check:checked+.btn:focus {
   box-shadow: none;
 }
+.btn-check:checked+.input-div:hover {
+  color: white;
+}
 .btn-check:checked+.input-div {
   box-shadow: none;
   border: 2px solid #17386B;
   background-color: #17386B;
   color: white;
+  transform: scale(1.2);
+  transition: all 0.2s;
 }
 .btn-check:hover+.input-div {
   box-shadow: none;
   border: 2px solid #17386B;
-  background-color: #17386B;
-  color: white;
-  transform: scale(1.1);
-  transition: all 0.3s;
+  color: black;
 }
 .btn-check:focus+.input-div:hover {
   color: white;
@@ -266,8 +273,20 @@ html {
 }
 .btn-check:checked+.input-btn {
   border: 2px solid #17386B;
+  background-color: #17386B;
+  color: white;
   transform: scale(1.2);
   transition: all 0.2s;
+  box-shadow: none;
+}
+.btn-check:checked+.input-btn i {
+  color: white;
+}
+.btn-check:checked+.input-btn:focus {
+  box-shadow: none;
+}
+.btn-check:checked+.input-btn:hover {
+  box-shadow: none;
 }
 .input-check {
   font-size: 1rem;
@@ -294,8 +313,29 @@ html {
   font-size: 2rem;
   font-family: "p-b";
 }
-.go-button:hover {
+.go-button:active {
   transform: scale(1.1);
+}
+/* --------------------상담이벤트-------------------- */
+.present-txt {
+  background-color: #17386B;
+  text-align: center;
+  padding-top: 1.5rem;
+  color: white;
+}
+.present-txt ul {
+  display: inline-block;
+}
+.present-txt li {
+  list-style:disc;
+}
+.present-txt h4 {
+  font-family: 'p-b';
+  margin-bottom: 1rem;
+}
+.present-img img {
+  width: 100%;
+  margin: 2rem 0;
 }
 /* --------------------제휴보험사-------------------- */
 .subslide-container {
@@ -310,7 +350,8 @@ html {
 }
 /* --------------------컨텐츠영역-------------------- */
 .main-content-first {
-  margin: 10rem 0;
+  margin: 5rem 0;
+  text-align: center;
 }
 .main-first-txt {
   margin: 30px 0;
@@ -325,11 +366,15 @@ html {
   font-size: 3rem;
   font-family: 'p-b';
 }
+.main-first-txt p {
+  font-size: 2rem;
+}
 .main-first-img {
   margin: 5rem 0;
+  text-align: center;
 }
 .main-first-img img {
-  width: 100%;
+  width: 80%;
 }
 /* ------------------------------ */
 .main-content-second {
@@ -355,6 +400,10 @@ html {
 .main-second-img {
   width: 100%;
   margin: 5rem 0;
+  text-align: center;
+}
+.main-second-img img {
+  width: 40%;
 }
 /* ------------------------------ */
 .main-underbar {
@@ -475,7 +524,7 @@ footer p {
 }
 @keyframes percent-disappear1 {
   from {
-    height: 15rem;
+    height: 12rem;
   }
   to {
     height: 0;
@@ -483,7 +532,7 @@ footer p {
 }
 @keyframes percent-disappear2 {
   from {
-    height: 10rem;
+    height: 6rem;
   }
   to {
     height: 0;
@@ -491,7 +540,7 @@ footer p {
 }
 @keyframes percent-disappear3 {
   from {
-    height: 7rem;
+    height: 4rem;
   }
   to {
     height: 0;
@@ -499,7 +548,7 @@ footer p {
 }
 @keyframes percent-disappear4 {
   from {
-    height: 12rem;
+    height: 8rem;
   }
   to {
     height: 0;
@@ -742,6 +791,9 @@ footer p {
  .btn-span {
    font-size: 0.4rem;
  }
+ .present-txt p {
+   font-size: 0.9rem;
+ }
 }
 @media screen and (max-width: 304px) {
   html {
@@ -756,5 +808,8 @@ footer p {
   .input-btn {
     width: 20%;
     margin: 0.5rem 0.1rem;
+  }
+  .present-txt p {
+    font-size: 0.7rem;
   }
 }
