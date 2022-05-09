@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <!------------------------------------------------------네비게이션바----------------------------------------------------->
-        <nav id="navbar" class="navbar-container">
+        <nav class="navbar-container">
             <div class="navbar-logo"><img src="/images/MEGA-LOGO.png" alt=""></div>
             <div class="navbar-sns">
                 <ul>
@@ -60,7 +60,7 @@
             </div>
         </div>
         <!------------------------------------------------상담신청 박스--------------------------------------------------------->
-        <div class="input-container">
+        <div id="navbar" class="input-container">
             <input type="hidden" name="contact_number">
             <div class="input-first">
                 <h1>STEP 01. 개인정보 작성</h1>
@@ -166,7 +166,8 @@
                         </label>
                     </div>
                 </div>
-                <input id="agree-check" class="input-check" type="checkbox">개인정보수집 및 이용 동의
+                <input id="agree-check" class="input-check" type="checkbox"><label for="agree-check">개인정보수집 및 이용
+                    동의</label>
                 <button id="agree-button">보기</button>
                 <button onclick="goEmail()" class="go-button">무 료 상 담 신 청</button>
             </div>
@@ -189,7 +190,7 @@
                         <p>목적자금, 노후자금 등 연금준비 및 짠텐크를 이용한 보험 재테크</p>
                     </li>
                     <li>
-                        <p>과한 보험료 납입이 어려우신 분 (리모델링)</p>
+                        <p>과도한 보험료로 유지가 힘드신 분 (리모델링)</p>
                     </li>
                     <li>
                         <p>과거 병력으로 인해 보험가입에 어려움이 있으신 분 (유병자보험)</p>
@@ -246,7 +247,7 @@
             </div>
             <div class="main-content-second">
                 <div class="main-second-txt">
-                    <h2><span class="span">매달 내는 보험료</span><br>
+                    <h2>매달 내는 보험료<br>
                         나의 소득과 지출에 비해<br>
                         <span class="span">적절하게</span> 내고 계신가요 ?
                     </h2>
@@ -280,16 +281,20 @@
                         납입하고 계시지 않은가요 ?</p>
                 </div>
             </div>
-            <div class="main-content-first">
+            <div class="main-content-first" style="margin-top: 0;">
                 <div class="main-first-txt">
-                    <h2>불필요한 보장은 <span class="span">줄이고</span></h2>
-                    <h2>부족한 보장은 <span class="span">보충하고</span></h2>
+                    <h2>불필요한 보장은 줄이고</h2>
+                    <h2>부족한 보장은 보충하고</h2>
                     <br>
-                    <h2><span class="span">전문가</span>를 통한 내보험 보장분석 및</h2>
-                    <h2>리모델링 하고 상담 <span class="span">선물까지</span></h2>
+                    <h3>전문가를 통한 내보험</h3>
+                    <h3>보장분석 및 리모델링 하고</h3>
+                    <h3>상담 선물까지 받아가자</h3>
                 </div>
 
             </div>
+        </div>
+        <div class="pre-container">
+            <img src="/images/pre.png" alt="">
         </div>
         <div class="main-underbar">
             <h1>필 수 안 내 사 항</h1>
@@ -332,7 +337,7 @@
             <p>Copyright @Since 2022 MEGA NSI ASSET ROYAL All rights reserved.</p>
         </footer>
         <div class="fixbar">
-            <p>상담만 받아도 스타벅스 커피쿠폰 증정</p>
+            <p id="fixbar-random">현재 상담신청 대기 인원수 58명</p>
             <a href="#navbar">상담신청 남기기</a>
         </div>
     </div>
