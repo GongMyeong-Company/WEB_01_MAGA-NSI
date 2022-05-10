@@ -624,9 +624,9 @@ footer p {
   .subslide-container h1 {
     font-size: 2rem;
   }
-  .fixbar {
+  /* .fixbar {
     display: block;
-  }
+  } */
   footer {
     height: 370px;
   }
