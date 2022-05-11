@@ -11,12 +11,12 @@ window.addEventListener('scroll', function () {
     let value = window.scrollY;
     console.log("scrollY", value);
 
-    if (screen.width > 1200 && value > 4200) {
+    if (1200 < screen.width <=1800 && value > 4500) {
         percentAnimation1.style.animation = 'percent-1 1s ease-in-out';
         percentAnimation2.style.animation = 'percent-2 1.5s ease-in-out';
         percentAnimation3.style.animation = 'percent-3 2s ease-in-out';
         percentAnimation4.style.animation = 'percent-4 2.5s ease-in-out';
-    } else if (991 < screen.width <= 1200 && value > 3400) {
+    } else if (991 < screen.width <= 1200 && value > 4000) {
         percentAnimation1.style.animation = 'percent-1 1s ease-in-out';
         percentAnimation2.style.animation = 'percent-2 1.5s ease-in-out';
         percentAnimation3.style.animation = 'percent-3 2s ease-in-out';
@@ -47,6 +47,12 @@ window.addEventListener('scroll', function () {
         percentAnimation3.style.animation = 'percent-disappear3 1s ease-out forwards';
         percentAnimation4.style.animation = 'percent-disappear4 1s ease-out forwards';
     }
+});
+
+
+window.addEventListener('scroll', function () {
+    let value = window.scrollY;
+    console.log("scrollY", value);
 
     if (screen.width > 1200 && value > 2200) {
         textAnimation.style.animation = 'text-1 2s ease-out'
@@ -64,6 +70,7 @@ window.addEventListener('scroll', function () {
         textAnimation.style.animation = 'text-disappear 1.5s ease-out forwards'
     }
 });
+
 
 let new_window_width = 600;
 let new_window_height = 700;
