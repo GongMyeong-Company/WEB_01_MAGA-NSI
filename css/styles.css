@@ -711,6 +711,9 @@ footer p {
   .percent {
     margin-right: 0.5rem;
   }
+  .main-second-img img {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -776,7 +779,7 @@ footer p {
     font-size: 1.5rem;
   }
  .main-second-img img {
-  width: 60%; 
+  width: 80%; 
  }
  .main-underbar {
    padding: 7px;
